@@ -16,6 +16,9 @@ body {
     margin: 0;
     overflow: hidden;
 }
+p{
+    text-align: center;
+}
 .Phase1, .Phase2, .Phase3 {
     position: fixed;
     top: 0;
