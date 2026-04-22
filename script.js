@@ -19,6 +19,15 @@ function generateStars() {
 
 generateStars();
 
+// Overlay div for smooth fade-to-black transition into portfolio
+const fadeOverlay = document.createElement('div');
+fadeOverlay.style.cssText = `
+    position: fixed; inset: 0; background: black;
+    opacity: 0; pointer-events: none;
+    transition: opacity 2s ease; z-index: 9999;
+`;
+document.body.appendChild(fadeOverlay);
+
 setTimeout(() => {
     // Phase 1 fades out
     document.querySelector('.Phase1').style.opacity = '0';
@@ -39,10 +48,15 @@ setTimeout(() => {
             setTimeout(() => {
                 document.querySelector('.crawl').style.animation = 'crawl 100s linear forwards';
 
-            // Redirect to profile page after crawl finishes
-            setTimeout(() => {
-                window.location.href = 'portfolio.html';
-            }, 100000);
+                // Begin fade-to-black ~3s before crawl ends, then navigate
+                setTimeout(() => {
+                    fadeOverlay.style.pointerEvents = 'all';
+                    fadeOverlay.style.opacity = '1';
+                    setTimeout(() => {
+                        window.location.href = 'portfolio.html';
+                    }, 2100);
+                }, 36000);
+
             }, 1500);
 
             // Phase 2 fades out shortly after Phase 3 appears
