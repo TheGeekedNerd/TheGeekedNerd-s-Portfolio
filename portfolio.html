@@ -1,338 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheGeekedNerd — Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <script src="portfolio.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheGeekedNerd — Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
 
-    <!-- Page-entry fade from black (matches intro crawl transition) -->
-    <div id="entry-fade" style="position:fixed;inset:0;background:black;z-index:9999;pointer-events:none;transition:opacity 1.8s ease;"></div>
-
-    <!-- Deep-space starfield canvas -->
-    <canvas id="portfolio-stars"></canvas>
-
-    <!-- Star field (populated by JS) -->
-    <div class="stars" aria-hidden="true"></div>
-
-    <!-- ── NAV ── -->
-    <nav>
-    <a href="#hero" class="nav-brand">
-        TheGeekedNerd
-    </a>
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="https://github.com/TheGeekedNerd" class="nav-brand">TheGeekedNerd</a>
     <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    </nav>
+  </nav>
 
-    <div class="page">
+  <div class="page">
 
     <!-- ── HERO ── -->
     <section id="hero">
-        <div class="hero-logo">
-        <img src="logo.jpg" alt="Imperial Emblem" class="hero-logo-img"/>
-        </div>
-
-        <h1 class="hero-name">Sazi Kubheka</h1>
-        <img src="vader.jpg" alt="Darth Vader" class="hero-image"/>
-        <p class="hero-role">Computer Science student</p>
-        <div class="hero-divider"></div>
-        <p class="hero-bio">
-        Welcome to my new Empire. Pls take your time in exploring my work and feel free to reach out if you want to chat about anything — whether it's a project, an opportunity, or nerd related topics. I'm always happy to connect with fellow geeks and nerds. May the code be with you!
-        </p>
-        <div class="hero-chips">
+      <div class="hero-logo">
+        <img src="logo.jpg" alt="Logo" class="hero-logo-img"/>
+      </div>
+      <h1 class="hero-name">Sazi Kubheka</h1>
+      <p class="hero-role">Computer Science Student</p>
+      <div class="hero-divider"></div>
+      <p class="hero-bio">
+        Welcome to my corner of the internet. Browse my work and feel free to reach out
+        if you want to chat about anything — whether it's a project, an opportunity, or
+        nerd-related topics. May the code be with you.
+      </p>
+      <div class="hero-chips">
         <span class="chip">Aspiring Software Engineer</span>
         <span class="chip">Tech Enthusiast</span>
         <span class="chip">Problem Solver</span>
         <span class="chip">Nerd</span>
         <span class="chip">Open to opportunities</span>
-        </div>
+      </div>
     </section>
 
     <!-- ── ABOUT ── -->
     <section id="about">
-        <div class="section-heading">
-        <h2>// About</h2>
+      <div class="section-heading">
+        <h2>About</h2>
         <div class="heading-line"></div>
         <span class="heading-tag">01</span>
-        </div>
-
-        <div class="about-body">
+      </div>
+      <div class="about-body">
         <div class="about-text">
-            <p>
-            Konnichiwa! I'm Sazi aka TheGeekedNerd, a final year Computer Science & Computational and Applied Mathematics student with a passion for Sofware  Development, problem-solving, Machine Learning and AI. I like building cool stuff and coming up with ideas for websites/apps that would be very useful in my daily life, learning new things, and exploring the latest technologies.
-            </p>
-            <!-- Replace the paragraphs above with your own story -->
+          <p>
+            "Hey, I'm Sazi — a final year Computer Science & Applied Mathematics student at Wits. I enjoy building things that solve real problems, whether that's a full-stack web app, an Android project, or something ML-related. Outside of code I'm usually watching anime, solving puzzles, or going down a rabbit hole about something I probably didn't need to know like dark matter and quantum superposition. Always open to cool projects and good conversations."
+          </p>
         </div>
-
         <div class="about-facts">
-            <div class="fact-box">
-            <div class="fact-number">3+</div>
-            <div class="fact-label">Years coding</div>
-            </div>
-            <div class="fact-box">
+          <div class="fact-box">
             <div class="fact-number">100+</div>
-            <div class="fact-label">Anime I've Wached</div>
-            </div>
-            <div class="fact-box">
-            <div class="fact-number">2</div>
-            <div class="fact-label">Rubix Cubes solved</div>
-            </div>
-            <div class="fact-box">
-            <div class="fact-number">3</div>
-            <div class="fact-label">One Piece rewatches</div>
-            </div>
+            <div class="fact-label">Anime watched</div>
+          </div>
+          <div class="fact-box">
+            <div class="fact-number">&#9834;</div>
+            <div class="fact-label">Most listened to artist: The Weeknd</div>
+          </div>
+          <div class="fact-box">
+            <div class="fact-number">#1</div>
+            <div class="fact-label">Favourite Manga: 20th Century Boys</div>
+          </div>
+          <div class="fact-box">
+            <div class="fact-number">V</div>
+            <div class="fact-label">Favourite Star Wars movie: Empire Strikes Back</div>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
 
     <!-- ── SKILLS ── -->
-    <section id="skills" style="padding-top: 0;">
-        <div class="section-heading">
-        <h2>// Skills</h2>
+    <section id="skills" style="padding-top:0">
+      <div class="section-heading">
+        <h2>Skills</h2>
         <div class="heading-line"></div>
         <span class="heading-tag">02</span>
-        </div>
-
-        <div class="skills-grid">
+      </div>
+      <div class="skills-grid">
         <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Python</span><span class="skill-level">Proficient</span></div>
         <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Java</span><span class="skill-level">Proficient</span></div>
         <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">HTML</span><span class="skill-level">Advanced</span></div>
-        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">JavaScript</span><span class="skill-level">Proficient</span></div>
-        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">React</span><span class="skill-level">Proficient</span></div>
-        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Node.js/ Express.js</span><span class="skill-level">Proficient</span></div>
-        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">MongoDB</span><span class="skill-level">Proficient</span></div>
+        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">JavaScript</span><span class="skill-level">Basic</span></div>
+        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">React</span><span class="skill-level">Beginner</span></div>
+        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Node.js / Express.js</span><span class="skill-level">Beginner</span></div>
+        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">MongoDB</span><span class="skill-level">Beginner</span></div>
         <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">CSS</span><span class="skill-level">Proficient</span></div>
-        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">GitHub</span><span class="skill-level">Advanced</span></div>
-        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Git</span><span class="skill-level">Advanced</span></div>
-        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">SQL</span><span class="skill-level">Advanced</span></div>
-        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">TypeScript</span><span class="skill-level">Familiar</span></div>
-        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Tailwind CSS</span><span class="skill-level">Familiar</span></div>
-        </div>
+        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">GitHub</span><span class="skill-level">Proficient</span></div>
+        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Git</span><span class="skill-level">Proficient</span></div>
+        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">SQL</span><span class="skill-level">Basic</span></div>
+        <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">C++</span><span class="skill-level">Proficient</span></div>
+      </div>
     </section>
 
     <!-- ── EXPERIENCE ── -->
     <section id="experience">
-        <div class="section-heading">
-        <h2>// Experience</h2>
+      <div class="section-heading">
+        <h2>Experience</h2>
         <div class="heading-line"></div>
         <span class="heading-tag">03</span>
-        </div>
-
-        <div class="exp-list">
-
-        <div class="exp-item">
-            <div class="exp-date">2026 —<br>Present</div>
-            <div>
-            <div class="exp-role">Academic Tutor</div>
-            <div class="exp-company">University of the Witwatersrand</div>
-            <div class="exp-desc">
-                Describe what you did here — what you built, what problems you solved,
-                what impact you had. Keep it specific and honest.
-            </div>
-            <div class="exp-tags">
-                <span class="exp-tag">Python</span>
-                <span class="exp-tag">Communication</span>
-                <span class="exp-tag">Numerical Analysis</span>
-                <span class="exp-tag">Optimization</span>
-            </div>
-            </div>
-        </div>
+      </div>
+      <div class="exp-list">
 
         <div class="exp-item">
-            <div class="exp-date">2026 —<br>Present</div>
-            <div>
-            <div class="exp-role">First Year Experience</div>
+          <div class="exp-date">2026 —<br>Present</div>
+          <div>
+            <div class="exp-role">Academic Tutor — Scientific Computing I</div>
             <div class="exp-company">University of the Witwatersrand</div>
             <div class="exp-desc">
-                Another role. What was the product? What was your contribution?
-                Any wins worth calling out?
+            Guide first-year Computational and Applied Mathematics students through Python-based
+            numerical methods during lab sessions — covering root-finding algorithms, iterative solvers,
+            approximation techniques for non-linear equations, and optimization methods. Bridge the gap
+            between mathematical theory and working code, helping students move from understanding a
+            method on paper to implementing it cleanly in Python. Support debugging, structured thinking,
+            and the kind of computational intuition that doesn't come from lectures alone.
             </div>
             <div class="exp-tags">
-                <span class="exp-tag">Leadership</span>
-                <span class="exp-tag">Communication</span>
-                <span class="exp-tag">Active listening</span>
+              <span class="exp-tag">Python</span>
+              <span class="exp-tag">Scientific Computing</span>
+              <span class="exp-tag">Numerical Analysis</span>
+              <span class="exp-tag">Debugging</span>
+              <span class="exp-tag">Communication</span>
             </div>
-            </div>
+          </div>
         </div>
 
+        <div class="exp-item">
+          <div class="exp-date">2026 —<br>Present</div>
+          <div>
+            <div class="exp-role">First Year Experience (FYE) Mentor</div>
+            <div class="exp-company">University of the Witwatersrand</div>
+            <div class="exp-desc">
+              Support first-year students through one of the most challenging transitions of their lives —
+              from high school to university. Build genuine, goal-oriented relationships with mentees,
+              connecting them to the right resources when they're navigating academic pressure, personal
+              challenges, or just feeling lost. Foster a peer environment where asking for help feels safe
+              rather than shameful.
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">Mentorship</span>
+              <span class="exp-tag">Leadership</span>
+              <span class="exp-tag">Active Listening</span>
+              <span class="exp-tag">Student Welfare</span>
+              <span class="exp-tag">Communication</span>
+            </div>
+          </div>
         </div>
 
-        </div>
+      </div>
     </section>
 
     <!-- ── PROJECTS ── -->
-        <!-- ── PROJECTS ── -->
-
     <section id="projects">
-
-        <div class="section-heading">
-
-        <h2>// Projects</h2>
-
+      <div class="section-heading">
+        <h2>Projects</h2>
         <div class="heading-line"></div>
-
         <span class="heading-tag">04</span>
-
-        </div>
-
-        <div class="projects-list">
+      </div>
+      <div class="projects-list">
 
         <div class="project-card">
+          <div>
+            <div class="project-name">KuduDash — Campus Food Ordering Platform</div>
+            <div class="project-desc">
+              A multi-vendor campus food ordering platform built for Software Design (COMS3009A).
+              Students browse vendor menus, place orders, and track them live while vendors manage
+              orders, menus, and earnings. Features an admin dashboard, PayFast payment integration,
+              appeal system with email notifications, and 98% Jest test coverage.
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">React 18</span>
+              <span class="exp-tag">Node.js</span>
+              <span class="exp-tag">MongoDB</span>
+              <span class="exp-tag">Express</span>
+              <span class="exp-tag">Auth0</span>
+              <span class="exp-tag">PayFast</span>
+              <span class="exp-tag">Azure</span>
+              <span class="exp-tag">Vercel</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Krazy5ive/KuduDash" target="_blank" class="project-link">GitHub ↗</a>
+            <a href="https://kudu-dash.vercel.app" target="_blank" class="project-link">Live ↗</a>
+          </div>
+        </div>
 
-            <div>
-
+        <div class="project-card">
+          <div>
             <div class="project-name">GradeUp — Matric Rewrite &amp; Adult Education Portal</div>
-
             <div class="project-desc">
-
-              A comprehensive platform helping South African students access matric rewrite opportunities,
-
-              find study resources, connect with qualified tutors, and track important exam deadlines.
-
-              Features an AI study assistant, rewrite centre directory with location-based search, past papers hub, and a tutor booking network with ratings and direct chat.
-
+              A comprehensive platform helping South African students access matric rewrite
+              opportunities, find study resources, connect with qualified tutors, and track
+              important exam deadlines. Features an AI study assistant, rewrite centre directory
+              with location-based search, past papers hub, and a tutor booking network.
+              Built as part of the DevSoc Hackathon with Firebase Firestore powering real-time data.
             </div>
-
             <div class="exp-tags">
-
-                <span class="exp-tag">React 18</span>
-
-                <span class="exp-tag">TypeScript</span>
-
-                <span class="exp-tag">Vite</span>
-
-                <span class="exp-tag">Firebase</span>
-
-                <span class="exp-tag">Tailwind CSS</span>
-
-                <span class="exp-tag">shadcn/ui</span>
-
-                <span class="exp-tag">TanStack Query</span>
-
+              <span class="exp-tag">React 18</span>
+              <span class="exp-tag">TypeScript</span>
+              <span class="exp-tag">Vite</span>
+              <span class="exp-tag">Firebase</span>
+              <span class="exp-tag">Tailwind CSS</span>
+              <span class="exp-tag">shadcn/ui</span>
+              <span class="exp-tag">TanStack Query</span>
             </div>
-
-            </div>
-
-            <div class="project-links">
-
+          </div>
+          <div class="project-links">
             <a href="https://github.com/TheGeekedNerd/GradeUp" target="_blank" class="project-link">GitHub ↗</a>
-
-            </div>
-
+          </div>
         </div>
 
-
-
         <div class="project-card">
-
-            <div>
-
+          <div>
             <div class="project-name">Grader — Academic Performance Tracker</div>
-
             <div class="project-desc">
-
-                A native Android app that lets students dynamically manage course modules and track assessments
-
-                with custom categories, weights, and fractional mark entry. The app calculates real-time
-
-                module grades, automatically averaging recurring assessment types before applying weights,
-
-                with smart validation preventing duplicate entries and full offline support via SharedPreferences and Gson.
-
+              A native Android app that lets students dynamically manage course modules and track
+              assessments with custom categories, weights, and fractional mark entry. Calculates
+              real-time module grades with smart validation and full offline support via local JSON storage.
+              Built with a teacher-first mindset — intuitive data entry and automatic year-mark calculations
+              across multiple modules.
             </div>
-
             <div class="exp-tags">
-
-                <span class="exp-tag">Android</span>
-
-                <span class="exp-tag">Java</span>
-
-                <span class="exp-tag">SharedPreferences</span>
-
-                <span class="exp-tag">Gson</span>
-
+              <span class="exp-tag">Android</span>
+              <span class="exp-tag">Java</span>
+              <span class="exp-tag">SharedPreferences</span>
+              <span class="exp-tag">Gson</span>
             </div>
-
-            </div>
-
-            <div class="project-links">
-
+          </div>
+          <div class="project-links">
             <a href="https://github.com/TheGeekedNerd/Grader" target="_blank" class="project-link">GitHub ↗</a>
-
-            </div>
-
+            <a href="https://appetize.io/embed/b_mig7s77fhfdkj43o7527lgtzfm" target="_blank" class="project-link">Live ↗</a>
+          </div>
         </div>
 
+
         <div class="project-card">
-            <div>
+          <div>
             <div class="project-name">LDS — Local Donation System</div>
             <div class="project-desc">
-                A full-stack web application for managing local donations, built with a clean separation between
-                frontend and backend via a branching workflow — UI work lives in <code>feature/ui</code> and server-side logic in <code>feature/php</code>.
-                    Features a PHP backend with MySQL for data persistence and a Vanilla JS frontend, with a structured
-                contribution model requiring all branches to rebase from main after every merge.
+              A full-stack web application for managing and coordinating local student donations.
+              Responsive frontend paired with a PHP/SQL backend for persistent data management.
+              Delivered as a functional prototype under hackathon time pressure — clean separation
+              of concerns between UI and server logic throughout.
             </div>
             <div class="exp-tags">
-                <span class="exp-tag">PHP</span>
-                <span class="exp-tag">MySQL</span>
-                <span class="exp-tag">JavaScript</span>
-                <span class="exp-tag">HTML</span>
-                <span class="exp-tag">CSS</span>
+              <span class="exp-tag">PHP</span>
+              <span class="exp-tag">MySQL</span>
+              <span class="exp-tag">JavaScript</span>
+              <span class="exp-tag">HTML</span>
+              <span class="exp-tag">CSS</span>
             </div>
-            </div>
-            <div class="project-links">
+          </div>
+          <div class="project-links">
             <a href="https://github.com/TheGeekedNerd/LDS-Web-App" target="_blank" class="project-link">GitHub ↗</a>
+            <a href="https://localdonationsystem.azurewebsites.net/" target="_blank" class="project-link">Live ↗</a>
+          </div>
+        </div>
 
-            </div>
-        </div>
-        </div>
+      </div>
     </section>
-
-
 
     <!-- ── CONTACT ── -->
     <section id="contact">
-        <div class="section-heading">
-        <h2>// Contact</h2>
+      <div class="section-heading">
+        <h2> Contact</h2>
         <div class="heading-line"></div>
         <span class="heading-tag">05</span>
-        </div>
-
-        <div class="contact-card">
+      </div>
+      <div class="contact-card">
         <p class="contact-intro">
-            Want to collaborate, chat about a project, or just say hi?Reach out through any of the channels below.
+          Want to collaborate, chat about a project, or just say hi?
+          Reach out through any of the channels below.
         </p>
         <div class="contact-rows">
-            <div class="contact-row">
+          <div class="contact-row">
             <span class="contact-label">Email</span>
-            <a href="mphosaz@gmail.com" class="contact-value">mphosaz@gmail.com</a>
-            </div>
-            <div class="contact-row">
-            <span class="contact-label">GitHub</span>
-            <a href="https://github.com/TheGeekedNerd" target="_blank" class="contact-value">TheGeekedNerd</a>
-            </div>
-            <div class="contact-row">
+            <a href="mailto:mphosaz@gmail.com" class="contact-value">mphosaz@gmail.com</a>
+          </div>
+          <div class="contact-row">
             <span class="contact-label">LinkedIn</span>
             <a href="https://www.linkedin.com/in/sazi-k" target="_blank" class="contact-value">Sazi Kubheka</a>
-            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">WhatsApp</span>
+            <a href="https://wa.me/+27730077118" target="_blank" class="contact-value">TheGeekedNerd</a>
+            <a href="https://wa.me/+27703035079" target="_blank" class="contact-value">Mpho</a>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
 
-    </div><!-- /.page -->
-    <!-- ── FOOTER ── -->
-    <footer>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
     <div class="footer-logo">
-        <img src="logo.jpg" alt="Imperial Emblem" class="footer-logo-img"/>
+      <img src="logo.jpg" alt="Logo" class="footer-logo-img"/>
     </div>
     <p>TheGeekedNerd &nbsp;·&nbsp; <span id="footer-year"></span> &nbsp;·&nbsp; May the code be with you</p>
-    </footer>
+  </footer>
+
+  <script src="portfolio.js"></script>
 </body>
 </html>
