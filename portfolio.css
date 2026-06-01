@@ -520,11 +520,9 @@ footer {
   text-align: center;
 }
 
-.footer-logo { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 0.75rem; }
-
 footer p {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 11px;
+  font-size: 20px;
   color: var(--text-dim);
   letter-spacing: 0.1em;
 }
