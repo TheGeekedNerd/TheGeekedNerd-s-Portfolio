@@ -69,3 +69,14 @@ setTimeout(() => {
     }, 1500);
 
 }, 5000);
+
+// Skip intro: fade to black immediately and go to portfolio
+document.getElementById('skipIntro').addEventListener('click', (e) => {
+    e.currentTarget.disabled = true;
+    fadeOverlay.style.transition = 'opacity 0.6s ease';
+    fadeOverlay.style.pointerEvents = 'all';
+    fadeOverlay.style.opacity = '1';
+    setTimeout(() => {
+        window.location.href = 'portfolio.html';
+    }, 650);
+});
