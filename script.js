@@ -1,3 +1,11 @@
+// Play the intro once per visitor; ?replay forces it again
+try {
+    if (localStorage.getItem('introSeen') && !location.search.includes('replay')) {
+        location.replace('portfolio.html');
+    }
+    localStorage.setItem('introSeen', '1');
+} catch (e) {}
+
 // Draw stars on canvas
 function generateStars() {
     const canvas = document.getElementById('stars');

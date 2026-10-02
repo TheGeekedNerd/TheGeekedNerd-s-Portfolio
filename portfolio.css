@@ -345,58 +345,25 @@ section {
 }
 
 /* SKILLS */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 0.65rem;
-}
+.skills-groups { display: flex; flex-direction: column; gap: 1.5rem; }
 
-/* Skill item - no box, left border only */
-.skill-item {
-  padding: 0.75rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
+/* Skill group - left border only */
+.skill-group {
+  padding: 0.25rem 0 0.25rem 1rem;
   border-left: 2px solid var(--border);
-  background: transparent;
   transition: border-color 0.2s;
 }
 
-.skill-item:hover { border-color: var(--border-hover); }
+.skill-group:hover { border-color: var(--border-hover); }
 
-.skill-name {
+.skill-group-label {
   font-size: 15px;
   color: var(--text);
   font-family: 'Oxanium', sans-serif;
   letter-spacing: 0.04em;
 }
 
-/* Diamond pip rating - rank insignia style */
-.skill-pips {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.pip {
-  width: 8px;
-  height: 8px;
-  border: 1px solid var(--text-dim);
-  transform: rotate(45deg);
-  display: inline-block;
-  transition: background 0.2s, border-color 0.2s;
-}
-
-.pip.filled {
-  background: var(--white);
-  border-color: var(--white);
-}
-
-.skill-item:hover .pip.filled {
-  background: var(--off-white);
-}
+.skill-group .exp-tags { margin-top: 0.6rem; }
 
 /* EXPERIENCE */
 .exp-list { display: flex; flex-direction: column; }
@@ -607,6 +574,14 @@ footer p {
   color: var(--text-dim);
   letter-spacing: 0.1em;
 }
+
+.footer-link {
+  color: var(--text-dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+.footer-link:hover { color: var(--white); }
 
 /* RESPONSIVE */
 @media (max-width: 640px) {

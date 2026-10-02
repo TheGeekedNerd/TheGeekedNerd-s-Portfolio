@@ -1,7 +1,7 @@
 /* portfolio.js — minimal, no canvas, no observers */
 document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-document.querySelectorAll('nav ul a').forEach(link => {
+document.querySelectorAll('nav ul a, .nav-brand').forEach(link => {
   link.addEventListener('click', e => {
     const href = link.getAttribute('href');
     if (!href.startsWith('#')) return;
